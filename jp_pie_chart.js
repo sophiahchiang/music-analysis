@@ -1,4 +1,4 @@
-d3.csv("jp_genres.csv").then((data) => {
+d3.csv("data/jp_genres.csv").then((data) => {
   //   for (let d of data) {
   //     if (d.weight < 5) {
   //       d.weight = 0;

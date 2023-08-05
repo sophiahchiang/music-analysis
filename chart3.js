@@ -1,6 +1,6 @@
 //Features by year
 
-d3.csv("energy_by_year_og.csv").then((data) => {
+d3.csv("data/energy_by_year_og.csv").then((data) => {
   let chart = LineChart(data, {
     x: (d) => d.year,
     y: (d) => d.energy,

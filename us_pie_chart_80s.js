@@ -1,6 +1,6 @@
 //Features by year
 
-d3.csv("us_genres_80s.csv").then((data) => {
+d3.csv("data/us_genres_80s.csv").then((data) => {
   for (let d of data) {
     if (d.weight < 5) {
       d.weight = 0;

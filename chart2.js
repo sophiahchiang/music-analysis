@@ -26,7 +26,7 @@ var yAxis = svg.append("g").attr("class", "myYaxis");
 // A function that create / update the plot for a given variable:
 function update(selectedVar) {
   // Parse the Data
-  d3.csv("features_by_playlist_transposed.csv").then((data) => {
+  d3.csv("data/features_by_playlist_transposed.csv").then((data) => {
     console.log(data);
     // X axis
     x.domain(
