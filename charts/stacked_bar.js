@@ -1,4 +1,4 @@
-d3.csv("data/new_genres.csv").then((data) => {
+d3.csv("./data/new_genres.csv").then((data) => {
   let chart = StackedBarChart(data, {
     x: (d) => d.genre,
     y: (d) => d.avg_streams / 1e6,

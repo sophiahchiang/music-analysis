@@ -1,4 +1,4 @@
-d3.csv("data/new_us_genres.csv").then((data) => {
+d3.csv("./data/new_us_genres.csv").then((data) => {
   for (let d of data) {
     if (d.avg_streams < 15000000) {
       d.avg_streams = 0;
