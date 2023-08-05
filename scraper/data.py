@@ -253,7 +253,7 @@ sp = spotipy.Spotify(
 # 3
 
 # us = pd.read_csv(
-#     "data/us-reduced_genre_network-2019.csv", on_bad_lines="skip", delimiter="\t"
+#     "../data/us-reduced_genre_network-2019.csv", on_bad_lines="skip", delimiter="\t"
 # )
 
 # print(us.head())
@@ -265,9 +265,9 @@ sp = spotipy.Spotify(
 # us_genres = us[['weight','avg_streams']].copy()
 # us_genres.to_csv('us_genres.csv')
 
-# newfile = pd.read_csv("data/us_genres.csv")
+# newfile = pd.read_csv("../data/us_genres.csv")
 # newfile = newfile.sort_values(by="source")
-# newfile.to_csv("data/new_us_genres.csv")
+# newfile.to_csv("../data/new_us_genres.csv")
 
 # 4
 
@@ -277,17 +277,17 @@ sp = spotipy.Spotify(
 
 # for country in countries:
 #     country = pd.read_csv(
-#         "data/%s-reduced_genre_network-2019.csv" % country,
+#         "../data/%s-reduced_genre_network-2019.csv" % country,
 #         on_bad_lines="skip",
 #         delimiter="\t",
 #     )
 #     country = country.groupby(["source"]).mean()
 #     country["country"] = countries[index]
-#     country.to_csv("data/%s_genres.csv" % countries[index])
+#     country.to_csv("../data/%s_genres.csv" % countries[index])
 #     index += 1
 
 # us = pd.read_csv(
-#     "data/us-reduced_genre_network-2019.csv", on_bad_lines="skip", delimiter="\t"
+#     "../data/us-reduced_genre_network-2019.csv", on_bad_lines="skip", delimiter="\t"
 # )
 
 # # print(us.head())
@@ -299,14 +299,14 @@ sp = spotipy.Spotify(
 # # us = us.sort_values(by='weight')
 # # print(us.head())
 # us_genres = us[["weight", "avg_streams"]].copy()
-# us_genres.to_csv("data/us_genres.csv")
+# us_genres.to_csv("../data/us_genres.csv")
 
-# us2 = pd.read_csv("data/us_genres.csv")
+# us2 = pd.read_csv("../data/us_genres.csv")
 # us2["country"] = "us"
 
-# newfile = pd.read_csv("data/us_genres.csv")
+# newfile = pd.read_csv("../data/us_genres.csv")
 # newfile = newfile.sort_values(by="source")
-# newfile.to_csv("data/new_us_genres.csv")
+# newfile.to_csv("../data/new_us_genres.csv")
 
 
 # us_new = us[['source', 'weight']].copy()
@@ -327,8 +327,8 @@ sp = spotipy.Spotify(
 # take only rows where source is the top 10 or so genres, then
 # rearrange such that each row has every country
 
-genres = pd.read_csv("data/genres.csv")
+genres = pd.read_csv("../data/genres.csv")
 genres = genres.drop(["weight"], axis=1)
 
-genres.to_csv("data/new_genres.csv")
+genres.to_csv("../data/new_genres.csv")
 print(genres.head())
