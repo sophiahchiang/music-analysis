@@ -1,4 +1,4 @@
-# Music Analysis
+# [Music Analysis](https://sophiahchiang.github.io/music-analysis/)
 
 I would like to use Spotify’s API to better understand the music content that exists on the platform and what people tend to consume. This data oriented project will consist of the following: 
 * Learning how to use a Spotify API to scrape data
